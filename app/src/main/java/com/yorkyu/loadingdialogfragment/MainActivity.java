@@ -113,7 +113,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }, 2000);
                 break;
             case R.id.btn_remove:
-                fragmentManager.popBackStack("tag", android.app.FragmentManager.POP_BACK_STACK_INCLUSIVE);
+//                fragmentManager.popBackStack("tag", android.app.FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                fragmentManager.popBackStack();
                 mTv.postDelayed(new Runnable() {
                     @Override
                     public void run() {
